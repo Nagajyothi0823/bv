@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Laplace transforms👩‍⚖️</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <section id="Definition">
+      <div class="row">
+        <h1>Laplace Transforms</h1>
+        <h2>Definition:</h2>
+        <p><strong>Laplace transform</strong> is named in honour of the great French mathematician, Pierre Simon De Laplace (1749-1827). Like all transforms, the Laplace transform changes one signal into another according to some fixed set of rules or equations. The best way to convert differential equations into algebraic equations is the use of Laplace transformation. In this section, students get a step-by-step explanation for every concept and will find it extremely easy to understand this topic in a detailed way.</p>
+      </div>
+    </section>
+    <section="Formula">
+      <div class="row">
+        <h2>Formula:</h2>
+        <p>Laplace transform is the integral transform of the given derivative function with real variable t to convert into complex function with variable s. For t ≥ 0, let f(t) be given and assume the function satisfies certain conditions to be stated later on.
+          The Laplace transform of f(t), that it is denoted by f(t) or F(s) is defined by the equation</p>
+        <img src="images/Laplace Transform.jpg" alt="">
+        <p>whenever the improper integral converges.</p>
+        <p><strong>Standard notation:</strong> Where the notation is clear, we will use an upper case letter to indicate the Laplace transform, e.g, L(f; s) = F(s).
+          The Laplace transform we defined is sometimes called the one-sided Laplace transform. There is a two-sided version where the integral goes from −∞ to ∞.</p>
+      </div>
+    </section>
+    <section="properties and formulas">
+      <div class="row">
+        <h2>Properties:</h2>
+        <p>Some of the Laplace transformation properties are:</p>
+        <p>If f1 (t) ⟷ F1 (s) and [note: ⟷ implies Laplace Transform]</p>
+        <p>f2 (t) ⟷ F2 (s), then</p>
+        <img src="images/LT Properties.jpg" alt="">
+        <h2>Formulas:</h2>
+        <img src="images/formulas.png" alt="">
+      </div>
+    </section>
+    <section="LT of diff eq">
+      <div class="row">
+        <h2>Laplace Transform of Differential Equation:</h2>
+        <p>The Laplace transform is a well established mathematical technique for solving a differential equation. Many mathematical problems are solved using transformations. The idea is to transform the problem into another problem that is easier to solve. On the other side, the inverse transform is helpful to calculate the solution to the given problem.</p>
+        <p>For better understanding, let us solve a first-order differential equation with the help of Laplace transformation,</p>
+        <p>Consider y’- 2y = e3x and y(0) = -5. Find the value of L(y).</p>
+        <p>First step of the equation can be solved with the help of the linearity equation:</p>
+        <p>L(y’ – 2y] = L(e3x)</p>
+        <p>L(y’) – L(2y) = 1/(s-3)</p>
+        <p>(because L(eax) = 1/(s-a))</p>
+        <p>L(y’) – 2s(y) = 1/(s-3)</p>
+        <p>sL(y) – y(0) – 2L(y) = 1/(s-3)</p>
+        <p>(Using Linearity property of the Laplace transform)</p>
+        <p>L(y)(s-2) + 5 = 1/(s-3) (Use value of y(0) ie -5 (given))</p>
+        <p>L(y)(s-2) = 1/(s-3) – 5</p>
+        <p>L(y) = (-5s+16)/(s-2)(s-3) …..(1)</p>
+        <p>here (-5s+16)/(s-2)(s-3) can be written as -6/s-2 + 1/(s-3) using partial fraction method</p>
+        <p>(1) implies L(y) = -6/(s-2) + 1/(s-3)</p>
+        <p>L(y) = -6e2x + e3x</p>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <h2>Inverse Laplace Transform</h2>
+        <p>The inverse of complex function F(s) to produce a real valued function f(t) is inverse laplace transformation of the function. If a unique function is continuous on o to ∞ limit and have the property of Laplace Transform,</p>
+        <p><strong>F(s) = L {f (t)} (s);</strong></p>
+        <p>is said to be Inverse laplace transform of F(s).  It can be written as, L-1 [f(s)] (t). This function is exponentially restricted real function. To learn more in detail visit the link given for inverse laplace transform.</p>
+        <h2>Applications Of Laplace Transform:</h2>
+        <ul>
+          <li>It is used to convert complex differential equations to a simpler form having polynomials.</li>
+          <li>It is used on to convert derivatives into multiple of domain variable and then convert the polynomials back to the differential equation using Inverse Laplace transform.</li>
+          <li>It is used in the telecommunication field to send signals both the sides of the medium. For example, when the signals are sent through phone then they are first converted into a time-varying wave and then super-imposed on the medium.</li>
+          <li>It is also used for many engineering tasks such as Electrical Circuit Analysis, Digital Signal Processing, System Modelling, etc.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="Examples">
+      <h2>Some Examples Of Laplace Transforms:</h2>
+      <p><strong>Example:1</strong></p>
+      <img src="images/ex2.png" alt="">
+      <p><strong>Example:2</strong></p>
+      <img src="images/ex3.png" alt="">
+    </section>
+    <section id="link">
+      <p><strong>Laplace Transform Calculator Link:🧟‍</strong></p>
+      <a href="https://www.symbolab.com/solver/laplace-calculator">Visit Laplace Transform Calculator👩‍💻</a>
+    </section>
+  </body>
+</html>
